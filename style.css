@@ -1,3 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&family=Dancing+Script&family=Noto+Serif&family=Nunito:ital,wght@0,400;0,500;1,700&family=Sarabun:ital,wght@0,100;0,300;1,100;1,500&family=Satisfy&family=Secular+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaushan+Script&family=Libre+Baskerville:ital@1&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Pacifico', cursive;  */
+    /* font-family: 'Sarabun', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+
+
+}
