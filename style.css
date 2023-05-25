@@ -10,6 +10,155 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     /* overflow: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(136, 137, 138);
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* overflow-y: auto; */
+
+}
+
+.fixed {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 2px 3px;
+    background: #262626;
+    color: white;
+    font-weight: 300;
+    margin-top: 20px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
 
 
+#header {
+    width: 100%;
+    min-height: 100vh;
+    /* margin-left: 500px; */
+    /* background-image: url(/Images/padhu\ new.jpg); */
+    /* background-size: cover; */
+    align-items: center;
+    background: rgb(136, 137, 138); 
+    padding: 100px;
+    position: relative;  
+    display: flex;
+    justify-content: space-between;
+} 
+
+.container {
+    padding: 10px 10%;
+    /* display: grid; */
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.logo {
+    width: 140px;     
+}
+
+nav h1 {
+    margin-right: 50px 50px;
+    padding: 10px 20px;
+    font-size: 30px;
+    position: relative;
+    /* color: darkgray; */
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    padding: 10px 20px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+#header .header-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#header .header-text h1 {
+    position: relative;
+    font-size: 5em;
+    color: black;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.btn1{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #ff004f;
+    color: #fff;
+    text-align: center;
+    padding: 14px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-left: 400px;
+    border-radius: 6px;
+    border: 1px solid #ff004f;
+    bottom: 120px;
+}
+
+#header .men{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-height: 80vh;
+    margin-bottom:170px;
+    margin-right: 80px;
+    
+}
+
+
+.header-text h1 span {
+    font-family: 'Satisfy', cursive;
 }
