@@ -36,20 +36,22 @@ function opentab(tabname) {
 }
 
 // contact form
-const scriptURL = 'https://script.google.com/macros/s/AKfycby2nt2AuBNvW6MzEwjPS25482jIhnkTfZFskmC813N-7g1ARZhG97SdmYjW46APlMPE/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
 
-form.addEventListener('submit', e => {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwCvAHccRvM2Pu1Q01aXsINQ0cv28E8qgmOFMzZK-_vmHvQys3eJRi2oiNmnXH6ZAGuqQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function () {
-                msg.innerHTML = ""
-            }, 1000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-})
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },2000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
 
