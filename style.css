@@ -71,7 +71,8 @@ nav {
 }
 
 .logo {
-    width: 140px;     
+    width: 140px; 
+    font-family: 'Dancing Script', cursive;    
 }
 
 nav h1 {
