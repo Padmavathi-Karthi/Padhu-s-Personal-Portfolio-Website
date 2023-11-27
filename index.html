@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padhu's Personal Portfolio Website</title>
 
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Eo_circle_pink_letter-p.svg/1200px-Eo_circle_pink_letter-p.svg.png">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Eo_circle_pink_letter-p.svg/1200px-Eo_circle_pink_letter-p.svg.png">
     <!-- CSS -->
     <link rel="stylesheet" href="/style.css">
     <!-- Font Awesome Kit -->
@@ -16,36 +17,85 @@
 <body>
 
     <!-- Header -->
-
     <div class="fixed">
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <!-- <h1 class="logo">Portfolio</h1>  -->
+            <nav class="navbar">
+                <ul id="sidemenu">
+                    <li><a href="#header" style="--i:1">Home</a></li>
+                    <li><a href="#about" style="--i:2">About</a></li>
+                    <li><a href="#eduexp" style="--i:3">Education & Experience</a></li>
+                    <li><a href="#skill" style="--i:4">Skills</a></li>
+                    <li><a href="#portfolio" style="--i:5">Projects</a></li>
+                    <li><a href="#contact" style="--i:6">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </header>
+    </div>
+    <!-- Hero section-->
+    <div id="header">
+        <div class="container">
+            <div class="hero-container">
+                <div class="info-side">
+
+                    <h3 class="part-1">Hello, It's Me</h3>
+                    <h1>Padmavathi Karthikeyan</h1>
+                    <h3 class="part-2">And I'm an aspiring <span id="changing-text">Cloud/DevOps Engineer</span></h3>
+                    <br>
+                    <!-- Social Media Icons -->
+                    <a href="https://www.linkedin.com/in/padmavathi-karthikeyan-150a93237/" target="_blank"
+                        style="--i:8" class="socialmedia"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Padmavathi-Karthi" target="_blank" style="--i:9" class="socialmedia"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/padhu.karthi" target="_blank" style="--i:7" class="socialmedia"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/padhukarthi17" target="_blank" style="--i:10" class="socialmedia"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <br>
+                    <a href="/Resume/Padmavathi Karthikeyan CV Generation.pdf" target="_blank"><button
+                            class="btn">Download CV</button></a>
+                </div>
+
+                <div class="hero-img">
+                    <img src="/Images/WhatsApp Image 2023-11-02 at 22.48.55_85f4acec5.jpg" alt="My Pic">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="fixed">
         <nav>
             <h1 class="logo">PADMAVATHI</h1>
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#eduexp">Education & Experience</a></li>
+                <li><a href="#skill">Skills</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="barmenu()"></i>
         </nav>
-    </div>
+    </div> -->
 
     <!-- Home Section -->
 
-    <div id="header">
+    <!-- <div id="header">
         <div class="container">
 
             <div class="header-text">
 
-                <!-- <p>Junior Developer</p> -->
-                <h1>Hi, I'm <br>Padmavathi Karthikeyan</h1>
+                 <p>Junior Developer</p> -->
+    <!-- <h1>Hi, I'm <br>Padmavathi Karthikeyan</h1>
             </div>
-            <a href="#contact" class="btn1">Contact Me</a>
+            <a href="/Resume/Padmavathi Karthikeyan CV - New.pdf" class="btn1">Download Resume</a>
             <img src="/Images/Padhu Background.png" class="men" alt="" srcset="">
 
         </div>
-    </div>
+    </div> -->
 
     <!-- About Section -->
 
@@ -58,235 +108,360 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p class="description"> A highly motivated and dedicated individual, passionate about modern technology.
-                    I have done a bachelor's degree in Bachelor of Computer Application, in which I had significant
-                    exposure to several programming languages such as C, C++, Java, PHP, DataBase, and Scripting
-                    Languages. I have done a master's degree in Master of Business Administration, to understand project
-                    management, decision-making, and client expectations in the business, which helped me to gain
-                    analytical skills, and enhanced my technical skills.<br><br>
-                    I have concentrated on Udemy online certifications and took a self-funded Digital Skills: Software
-                    Development Bootcamp to gain hands-on experience and to pursue my career as a junior developer /
-                    junior data analyst. During the bootcamp program, I learned HTML5, CSS3, and Vanilla JavaScript in
-                    Web Technology, MYSQL and Python in Software Development, Git and GitHub in Version
-                    Controls.<br><br>
-                    Kindly look at my independent projects and experiments. I hope you'll enjoy looking, and please
-                    share your feedback to improve myself. It would be awesome if you would consider my profile! Cheers
-                    &#128522; </p>
+                <p class="description"> I am a highly motivated and results-oriented individual with a passion for
+                    technology and a strong desire to contribute to the growth of an organization. I hold a Master's in
+                    Business Administration and a Bachelor's in Computer Application, I bring a unique blend of business
+                    acumen and technical expertise to the table. My passion for technology has led me to complete Google
+                    Cloud Engineer Bootcamp and Software Development Bootcamp, further solidifying my skills and
+                    knowledge. Furthermore, my commitment to professional growth is evident through my Google-Certified
+                    CDL (foundation) certification. Please click on the icon to check my credential <a href="https://www.credential.net/e181ea4e-c1ee-4338-8367-81bcf4476d35" class="cdl"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <br><br> Whether working collaboratively as part of a team or independently, I thrive in dynamic
+                    environments where I can apply my skills to solve customer problems effectively. My honed problem-solving abilities, demonstrated through projects like Generation's BootCamp's Kobayashi Maru simulation, my team successfully emerged victorious among five other teams, showcase my teamwork and ability to overcome complex challenges. Please click on the icon to see my team's coach (Andrea, Googler), has posted a proud moment of team's success on LinkedIn  <a href="https://www.linkedin.com/posts/andreavasco_katalyst-google-create-activity-7125150830676054017-DqRg?utm_source=share&utm_medium=member_desktop" class="cdl"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> Confident in my communication skills, I effectively engage with stakeholders and clearly explain technical concepts to non-technical audiences.
+                    Eager to contribute my expertise to a company that shares my passion for technological advancement, I seek opportunities to collaborate and innovate, empowering growth and achieving milestones through technology-driven solutions.
+                    Cheers
+                    &#128522;
+                </p>
+            </div>
+        </div>
+    </div>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <!-- <p class="tab-links">Experience</p> -->
-                    <p class="tab-links" onclick="opentab('Education and Experience')">Education and Experience</p>
-                </div>
-                <!-- Skill Section -->
-                <div class="tab-contents active-tab" id="skills">
-                    <section class="skills" id="skills">
-                        <!-- <h2>Skills</h2> -->
-                        <div class="skillcont">
-                            <div class="skill">
-                                <div class="head">
-                                    <div class="left">
-                                        <img src="/Images/Web Image.png" alt="" width="30px" height="30px">
-                                        <h4>Web Technology</h4>
-                                    </div>
-                                    <i class="fa-solid fa-angle-down"></i>
+    <!-- Experience Section -->
+    <div id="eduexp">
+        <div class="container">
+
+            <main class="row">
+
+                <!-- Education Section Starts -->
+                <section class="col">
+
+                    <header class="title">
+                        <h1 class="sub-title">Education</h1>
+                    </header>
+
+                    <div class="contents">
+
+                        <div class="box">
+                            <h4>Jan 2021 – Sep 2022</h4>
+                            <h3>Master’s Degree </h3>
+                            <p>MBA with Advanced Practice, Ulster
+                                University, London, UK</p>
+                        </div>
+
+                        <div class="box">
+                            <h4>June 2008 – April 2011</h4>
+                            <h3>Bachelor’s Degree </h3>
+                            <p>Bachelor of Computer Application (BCA),
+                                Idhaya College for Women. Bharathidasan University, India</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Education Section Ends -->
+
+                <!-- Experience Section Starts -->
+
+                <section class="col">
+
+                    <header class="title">
+                        <h1 class="sub-title">Experience</h1>
+                    </header>
+
+                    <div class="contents">
+
+                        <div class="box">
+                            <h4>Aug 2023 - Nov 2023</h4>
+                            <h3>Trainee Google Cloud Platform Engineer </h3>
+                            <p>Generation UK & Ireland, London
+                            </p>
+                        </div>
+
+                        <div class="box">
+                            <h4>Oct 2022 - Feb 2023</h4>
+                            <h3>Trainee Software Development </h3>
+                            <p>Just IT Training Ltd, London</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Experience Section Ends -->
+            </main>
+        </div>
+    </div>
+
+
+    <!-- Skill Section -->
+
+    <div id="skill">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="tab-contents active-tab" id="skills">
+                <section class="skills" id="skills">
+                    <!-- <h2>Skills</h2> -->
+
+                    <div class="skillcont">
+                        <div class="skill">
+                            <div class="head">
+                                <div class="left">
+                                    <img src="/Images/download (2).png" alt="" width="30px" height="30px">
+                                    <h4>Cloud Computing</h4>
                                 </div>
-                                <div class="items">
-                                    <div class="itemW">
-                                        <h5>HTML 5</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/html5.png" alt="">
-                                            <h5>90%</h5>
+                                <i class="fa-solid fa-angle-down" id="arrow"></i>
+                            </div>
+                            <div class="items">
+                                <div class="itemD">
+                                    <h5>Google Cloud Platform (GCP)</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/download (4).png" alt="">
+                                        <h5>90%</h5>
                                     </div>
-                                    <div class="itemW">
-                                        <h5>CSS 3</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/css3.png" alt="">
-                                            <h5>85%</h5>
+                                </div>
+                                <div class="itemD">
+                                    <h5>Networking</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/download (5).png" alt="">
+                                        <h5>80%</h5>
                                     </div>
-                                    <div class="itemW">
-                                        <h5>Vanilla JavaScript</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/Javascript.png" alt="">
-                                            <h5>60%</h5>
+                                </div>
+                                <div class="itemD">
+                                    <h5>Security</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/download (6).png" alt="">
+                                        <h5>70%</h5>
                                     </div>
-                                    <div class="itemW">
-                                        <h5>React</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/React.png" alt="">
-                                            <h5>40%</h5>
+                                </div>
+                                <div class="itemD">
+                                    <h5>DevOps</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/download (7).png" alt="">
+                                        <h5>80%</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="skillcont">
-                            <div class="skill">
-                                <div class="head">
-                                    <div class="left">
-                                        <img src="/Images/backend.png" alt="" width="30px" height="30px">
-                                        <h4>Software Development</h4>
-                                    </div>
-                                    <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="skillcont">
+                        <div class="skill">
+                            <div class="head">
+                                <div class="left">
+                                    <img src="/Images/backend.png" alt="" width="30px" height="30px">
+                                    <h4>Software Development</h4>
                                 </div>
-                                <div class="items">
-                                    <div class="itemS">
-                                        <h5>Python</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/Python.png" alt="">
-                                            <h5>60%</h5>
+                                <i class="fa-solid fa-angle-down" id="arrow"></i>
+                            </div>
+                            <div class="items">
+                                <div class="itemS">
+                                    <h5>Python</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/Python.png" alt="">
+                                        <h5>80%</h5>
                                     </div>
-                                    <div class="itemS">
-                                        <h5>Java</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/Java.png" alt="">
-                                            <h5>50%</h5>
+                                </div>
+                                <div class="itemS">
+                                    <h5>Java</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/Java.png" alt="">
+                                        <h5>50%</h5>
                                     </div>
-                                    <div class="itemS">
-                                        <h5>Database</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/MySQL.png" alt="">
-                                            <h5>60%</h5>
+                                </div>
+                                <div class="itemS">
+                                    <h5>MySQL</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/MySQL.png" alt="">
+                                        <h5>75%</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="skillcont">
-                            <div class="skill">
-                                <div class="head">
-                                    <div class="left">
-                                        <img src="/Images/operating.png" alt="" width="30px" height="30px">
-                                        <h4>Version Control and Operating System</h4>
-                                    </div>
-                                    <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="skillcont">
+                        <div class="skill">
+                            <div class="head">
+                                <div class="left">
+                                    <img src="/Images/operating.png" alt="" width="30px" height="30px">
+                                    <h4>Operating System and Version Control</h4>
                                 </div>
-                                <div class="items">
-                                    <div class="itemC">
-                                        <h5>Git</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/Git.png" alt="">
-                                            <h5>50%</h5>
+                                <i class="fa-solid fa-angle-down" id="arrow"></i>
+                            </div>
+                            <div class="items">
+                                <div class="itemC">
+                                    <h5>Linux</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/download.png" alt="">
+                                        <h5>85%</h5>
                                     </div>
-                                    <div class="itemC">
-                                        <h5>GitHub</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/GitHub.png" alt="">
-                                            <h5>50%</h5>
+                                </div>
+                                <div class="itemC">
+                                    <h5>Windows</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/Windows.png" alt="">
+                                        <h5>75%</h5>
                                     </div>
-                                    <div class="itemC">
-                                        <h5>Windows</h5>
-                                        <div class="progress-area">
-                                            <div class="progress-bar">
-                                                <div class="progress"></div>
-                                            </div>
-                                            <img src="/Images/Windows.png" alt="">
-                                            <h5>80%</h5>
+                                </div>
+                                <div class="itemC">
+                                    <h5>Git</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
                                         </div>
+                                        <img src="/Images/Git.png" alt="">
+                                        <h5>60%</h5>
+                                    </div>
+                                </div>
+                                <div class="itemC">
+                                    <h5>GitHub</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/GitHub.png" alt="">
+                                        <h5>60%</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
-                <!-- Timeline -->
-                <div class="tab-contents" id="Education and Experience">
-                    <div class="heading"> </div>
+                    </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="card-title">Oct 2022 - Feb 2023</h1>
-                            <p class="card-detail">Level 3 Digital Skills Bootcamp: Software Development
-                                <br> Just IT Training Ltd,
-                                London.<br> A twelve-week intensive bootcamp covering the
-                                fundamentals of Web and Software Development.<br>
-                                (Course Modules: HTML5, CSS3, JavaScript, MySQL, and Python)<br>
-                            </p>
+                    <div class="skillcont">
+                        <div class="skill">
+                            <div class="head">
+                                <div class="left">
+                                    <img src="/Images/Web Image.png" alt="" width="30px" height="30px">
+                                    <h4>Web Technology</h4>
+                                </div>
+                                <i class="fa-solid fa-angle-down" id="arrow"></i>
+                            </div>
+                            <div class="items">
+                                <div class="itemW">
+                                    <h5>HTML 5</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/html5.png" alt="">
+                                        <h5>90%</h5>
+                                    </div>
+                                </div>
+                                <div class="itemW">
+                                    <h5>CSS 3</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/css3.png" alt="">
+                                        <h5>85%</h5>
+                                    </div>
+                                </div>
+                                <div class="itemW">
+                                    <h5>Vanilla JavaScript</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/Javascript.png" alt="">
+                                        <h5>60%</h5>
+                                    </div>
+                                </div>
+                                <div class="itemW">
+                                    <h5>React</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/React.png" alt="">
+                                        <h5>40%</h5>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="card-title">Jan 2021 – Aug 2022</h1>
-                            <p class="card-detail">Master’s Degree – MBA with Advanced Practice. Ulster
-                                University,
-                                London Campus. UK. <br>(Course Modules:Digital Transformation, Accounting,
-                                Innovation and
-                                Entrepreneurship, Operation Management, Strategy and Marketing)
-                            </p>
+                    <div class="skillcont">
+                        <div class="skill">
+                            <div class="head">
+                                <div class="left">
+                                    <img src="/Images/download (8).png" alt="" width="30px" height="30px">
+                                    <h4>Soft Skills</h4>
+                                </div>
+                                <i class="fa-solid fa-angle-down" id="arrow"></i>
+                            </div>
+                            <div class="items">
+                                <div class="itemE">
+                                    <h5>Problem-Solving</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/download (9).png" alt="">
+                                        <h5>80%</h5>
+                                    </div>
+                                </div>
+                                <div class="itemE">
+                                    <h5>Creativity</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/images.jpeg" alt="">
+                                        <h5>75%</h5>
+                                    </div>
+                                </div>
+                                <div class="itemE">
+                                    <h5>Adaptability</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/download.jpeg" alt="">
+                                        <h5>80%</h5>
+                                    </div>
+                                </div>
+                                <div class="itemE">
+                                    <h5>Effective Communication</h5>
+                                    <div class="progress-area">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <img src="/Images/images.png" alt="">
+                                        <h5>75%</h5>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="card-title">June 2008 – April 2011</h1>
-                            <p class="card-detail">Bachelor’s Degree – Bachelor of Computer Application (BSC),
-                                Computer Science. Idhaya College for Women. Bharathidasan University.
-                                India.<br>(Course Modules:Java, C, C++, RDBMS and Operating Systems)
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="card-title">June 2007 – March 2008</h1>
-                            <p class="card-detail">A - Levels (HSC - 12th Std) – Computer Science.<br> Christ
-                                The
-                                King Matriculation Higher Secondary School, India.<br>(Subjects: English, Maths,
-                                Computer Science, Physics, Chemistry and Tamil)<br>
-                                Scored: 77.75%
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="card-title">June 2005 – March 2006</h1>
-                            <p class="card-detail">GCSE’s (SSC - 10th Std) – Computer Science and
-                                Mathematics.<br>Christ The King Matriculation Higher Secondary School,
-                                India.<br>(Subjects: English, Maths, Computer Science, History, Geography and
-                                Tamil)<br>
-                                Scored: 69.72%
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
+                </section>
             </div>
         </div>
     </div>
@@ -303,8 +478,12 @@
                     <div class="layer">
                         <h3>Loyalty Rewards</h3>
                         <p>Used Figma tool to design a high-fidelity rewards page for a mobile app</p>
-                        <a href="https://www.figma.com/proto/IaAGUmg3CWjfS88SpNjxFC/Finz-Assignment?type=design&node-id=1-3&t=m6BILqhd7t56FI9d-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4&mode=design" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div class="links">
+                            <a href="https://www.figma.com/proto/IaAGUmg3CWjfS88SpNjxFC/Finz-Assignment?type=design&node-id=1-3&t=m6BILqhd7t56FI9d-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4&mode=design"
+                                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!-- <a href="https://github.com/Padmavathi-Karthi" target="_blank" style="--i:9"><i
+                                    class="fa-brands fa-github"></i></a> -->
+                        </div>
                     </div>
                 </div>
 
@@ -312,48 +491,66 @@
                     <img src="https://doglime.com/wp-content/uploads/2019/07/cute-Pomeranian-puppy.jpg" height="350px">
                     <div class="layer">
                         <h3>Dog Breeds</h3>
-                        <p>The Angular Material, front-end framework is used to display the list of white dogs in dashboard section and descriptions of breeds in the about section</p>
-                        <a href="https://angular-material-project-nu.vercel.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p>The Angular Material, front-end framework is used to display the list of white dogs in
+                            dashboard section and descriptions of breeds in the about section</p>
+                        <div class="links">
+                            <a href="https://angular-material-project-nu.vercel.app/" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Padmavathi-Karthi/AngularMaterialProject" target="_blank"
+                                style="--i:9"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="work">
-                    <img src="/Images/Music App.jpeg">
+                    <img src="/Images/Music App.jpeg" height="350px">
                     <div class="layer">
                         <h3>Music App</h3>
-                        <p>The music app is built using Python and SQLite. In Python, I used multiple file imports to
+                        <p>The music app is built using Python and SQLite. In Python, I used multiple file imports
+                            to
                             keep the code clean. The database allows users to add, delete and update records.</p>
-                        <a href="https://padhukarthi.com/Song App.html" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div class="links">
+                            <a href="http://127.0.0.1:5500/Song%20App.html" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Padmavathi-Karthi/Python---Song-App" target="_blank"
+                                style="--i:9"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="work">
-                    <img src="/Images/project3.jpeg">
+                    <img src="/Images/project3.jpeg" height="350px">
                     <div class="layer">
                         <h3>Restaurant Menu</h3>
-                        <p>The restaurant menu project shows a mouthwatering description of the food menu done by using
+                        <p>The restaurant menu project shows a mouthwatering description of the food menu done by
+                            using
                             HTML, CSS, and
                             JavaScript
                         </p>
-                        <a href="https://the-restaurant-menu-git-main-padmavathi-karthi.vercel.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div class="links">
+                            <a href="https://the-restaurant-menu-git-main-padmavathi-karthi.vercel.app/"
+                                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Padmavathi-Karthi/The-Restaurant-Menu" target="_blank"
+                                style="--i:9"><i class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
 
-
-
                 <div class="work">
-                    <img src="/Images/calculator.jpeg">
+                    <img src="/Images/calculator.jpeg" height="350px">
                     <div class="layer">
                         <h3>A Simple Calculator</h3>
                         <p>A simple calculator project done by using HTML, CSS, and JavaScript, which can
                             perform
                             basic arithmetic operations
                             depending upon the user input.</p>
-                        <a href="https://a-simple-calculator-new-git-main-padmavathi-karthi.vercel.app/"
-                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div class="links">
+                            <a href="https://a-simple-calculator-new-git-main-padmavathi-karthi.vercel.app/"
+                                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Padmavathi-Karthi/A-Simple-Calculator" target="_blank"
+                                style="--i:9"><i class="fa-brands fa-github"></i></a>
+                        </div>
+
                     </div>
                 </div>
 
@@ -364,20 +561,29 @@
                         <p>The flip card project is done by using HTML and CSS, which shows you the 3D effect, when
                             hover over the image
                             &#128521;</p>
-                        <a href="https://a-flip-card-git-main-padmavathi-karthi.vercel.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div class="links">
+                            <a href="https://a-flip-card-git-main-padmavathi-karthi.vercel.app/" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Padmavathi-Karthi/A-Flip-card" target="_blank" style="--i:9"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="work">
-                    <img src="https://assets.materialup.com/uploads/f7355622-0946-45cb-ad41-a42e33566c93/preview.jpg" height="350px">
+                    <img src="https://assets.materialup.com/uploads/f7355622-0946-45cb-ad41-a42e33566c93/preview.jpg"
+                        height="350px">
                     <div class="layer">
                         <h3>Price Table</h3>
                         <p>The pricing table project is done by using HTML and CSS, which help users to pick the
                             most
                             appropriate plan for them.</p>
-                        <a href="https://price-table-project-git-main-padmavathi-karthi.vercel.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div class="links">
+                            <a href="https://price-table-project-git-main-padmavathi-karthi.vercel.app/"
+                                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Padmavathi-Karthi/Price-Table-Project" target="_blank" style="--i:9"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -394,21 +600,12 @@
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>padhukarthi17@gmail.com</p>
                     <p><i class="fa-sharp fa-solid fa-square-phone"></i>07555584361</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/padhu.karthi" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/padmavathi-karthikeyan-150a93237/" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Padmavathi-Karthi" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://twitter.com/padhukarthi17" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                    <a href="/Resume/Padmavathi Karthikeyan CV - New.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+                    <form action="https://formspree.io/f/xpzggdaq" method="POST">
                         <input type="text" name="Name" placeholder="Please Enter Your Name" required>
                         <input type="email" name="Email" placeholder="Please Enter Your Email-ID" required>
-                        <textarea name="Message" rows="6" placeholder="Please Enter Your Message"></textarea>
+                        <textarea name="Message" rows="6" placeholder="Please Enter Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
@@ -424,6 +621,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="/script.js"></script>
 
 </body>
