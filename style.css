@@ -17,6 +17,7 @@ html {
 body {
     /* background: rgb(136, 137, 138); */
     background-color: #1f242d;
+    /* background-color: black; */
     font-family: "Poppins", sans-serif;
     color: white;
     /* position: absolute;
@@ -522,16 +523,18 @@ main.row {
 
 #skill {
     padding: 80px 0;
-    color: black;
+    /* color: black; */
+    color: white;
     /* margin-top: 100px; */
 
 }
 
-.skills h2 {
+/* .skills h2 {
+    padding: 80px 0;
     text-align: center;
     font-size: 2rem;
     margin: 5%;
-}
+} */
 
 .skillcont {
     width: 100%;
@@ -1327,6 +1330,11 @@ footer {
     .tab-links {
         font-size: 20px;
         margin-right: 20px;
+    }
+
+    .skill .head h4 {
+        font-size: 1.3rem;
+        background: none;
     }
 
     .contact-left,
