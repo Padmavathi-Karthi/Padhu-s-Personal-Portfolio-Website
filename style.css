@@ -970,23 +970,20 @@ main.row {
     height: 100%;
 }
 
-/* 
-.btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.25em;
-    transition: background 0.5s;
-} */
+/* Testimonial Section */
 
-/* .btn:hover {
-    background: #ff004f;
-} */
+#testimonial{
+    padding: 80px 0;
+}
+
+.wrapper{
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Contact Section */
 
