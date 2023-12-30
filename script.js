@@ -44,6 +44,19 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+const swiper = new Swiper('.js-testimonials-slider', {
+    grapCursor: true,
+    spaceBetween: 30,
+    pagination: {
+        el: '.js-testimonials-pagination',
+        clickable: true
+    },
+    breakpoints: {
+        767:{
+            slidePerView: 2
+        }
+    }
 
+});
 
 

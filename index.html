@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padhu's Personal Portfolio Website</title>
     <!-- swiper arrow for testimonial -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
-        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="icon"
         href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Eo_circle_pink_letter-p.svg/1200px-Eo_circle_pink_letter-p.svg.png">
@@ -622,10 +620,10 @@
 
                     </div>
                     <div class="testimonials-content">
-                        <div class="testimonials-slider js-testimonials-slider">
-                            <div>
+                        <div class="swiper testimonials-slider js-testimonials-slider">
+                            <div class="swiper-wrapper">
 
-                                <div class="testimonials-item">
+                                <div class="swiper-slide testimonials-item">
                                     <div class="info">
                                         <img src="/Images/shiji.jpeg" alt="image">
                                         <div class="text-box">
@@ -655,7 +653,7 @@
                                     </div>
                                 </div>
 
-                                <div class="testimonials-item">
+                                <div class="swiper-slide testimonials-item">
                                     <div class="info">
                                         <img src="/Images/emma.jpeg" alt="image">
                                         <div class="text-box">
@@ -689,7 +687,7 @@
                                     </div>
                                 </div>
 
-                                <div class="testimonials-item">
+                                <div class="swiper-slide testimonials-item">
                                     <div class="info">
                                         <img src="/Images/andrea.jpeg" alt="image">
                                         <div class="text-box">
@@ -721,12 +719,17 @@
 
                             </div>
                         </div>
+
+                        <div class="swiper-pagination js-testimonials-pagination"></div>
+
                     </div>
                 </div>
             </section>
 
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 
